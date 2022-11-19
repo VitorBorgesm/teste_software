@@ -11,7 +11,7 @@ para que eu não tenha que esperar numa fila de banco.
   
 
   @tag2
-  Scenario Outline: Cliente comum com saldo negativo
+  Scenario: Cliente comum com saldo negativo
     Given um cliente comum com saldo de -300 reais
     When solicitar um saque de 200 reais
     Then não deve efetuar o saque e deve retornar a mensagem Saldo Insuficiente
